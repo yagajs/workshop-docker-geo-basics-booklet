@@ -521,11 +521,11 @@ administrative purpose you should access your container from the CLI, or open a 
 
 ## Scaling
 
-Prefer using a Reverse-Proxy like NGINX as gateway for your requests. You can scale NGINX easily. If you want to provide
+Prefer using a Reverse-Proxy like [Traefik](https://traefik.io/) as gateway for your requests. If you want to provide
 multiple cached-layers: create one MapProxy for each layer. Keep in mind that you are building **micro**-services with
 Docker! You should use this concept for all the other images, too. Scaling of micro-services is only reasonable possible
 if you have metrics, so collect them! Docker has a build-in ability to scale over multiple physical instances with
-Docker Swarm.
+Docker Swarm or even better with Kubernetes.
 
 ## Appendix: List of useful docker commands
 
