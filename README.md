@@ -544,3 +544,4 @@ very carefully!*
 * `docker rm $(docker ps -aq)`: Remove all stopped containers.
 * `docker volume rm $(docker volume ls -q)`: Remove all unmounted volumes.
 * `docker rmi $(docker image ls -q)`: Remove all unused images.
+* `docker system prune`: Remove all images, containers, volumes and networks.
